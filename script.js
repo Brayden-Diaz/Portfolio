@@ -87,4 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
             filterProjects();
         });
     });
+
+    // blog tag filtering
+    const postPreviews = document.querySelectorAll('.post-preview');
+    const blogTagButtons = document.querySelectorAll('.blog-tags [data-tag-filter]');
+    let activeBlogTag = 'all';
+
+    function filterPosts() {
+        postPreviews.forEach(preview => {
+            const tags = preview.dataset.tags.split(' ');
+            const match = activeBlogTag === 'all' || tags.includes(activeBlogTag);
+            preview.style.display = match ? '' : 'none';
+        });
+    }
+
+    blogTagButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            activeBlogTag = btn.dataset.tagFilter;
+            blogTagButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterPosts();
+        });
+    });
 });
