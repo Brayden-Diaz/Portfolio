@@ -40,4 +40,44 @@ document.addEventListener('DOMContentLoaded', () => {
             graphPlaceholder.appendChild(document.createElement('div'));
         }
     }
+
+    // project filtering
+    const projectCards = document.querySelectorAll('.project-card');
+    const typeButtons = document.querySelectorAll('[data-type-filter]');
+    const techButtons = document.querySelectorAll('[data-tech-filter]');
+    let activeType = 'all';
+    let activeTech = 'all';
+
+    function filterProjects() {
+        projectCards.forEach(card => {
+            const category = card.dataset.category;
+            const tags = card.dataset.tags.split(' ');
+            const typeMatch =
+                activeType === 'all' ||
+                (activeType === 'ai' && tags.includes('ai')) ||
+                category === activeType;
+            const techMatch =
+                activeTech === 'all' ||
+                tags.includes(activeTech);
+            card.style.display = typeMatch && techMatch ? '' : 'none';
+        });
+    }
+
+    typeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            activeType = btn.dataset.typeFilter;
+            typeButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterProjects();
+        });
+    });
+
+    techButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            activeTech = btn.dataset.techFilter;
+            techButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterProjects();
+        });
+    });
 });
