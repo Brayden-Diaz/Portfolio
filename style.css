@@ -1,28 +1,44 @@
 :root {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --accent-color: #1e90ff;
+    --bg-color: #0d1117;
+    --text-color: #e6e6e6;
+    --accent-color: #64ffda;
+    --font-body: 'Inter', Arial, sans-serif;
+    --font-heading: 'Poppins', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     background-color: var(--bg-color);
     color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    z-index: 10;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -30,15 +46,62 @@ nav ul {
 nav a {
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent-color);
+}
+
+#theme-toggle,
+#menu-toggle {
+    background: none;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover,
+#menu-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+#menu-toggle {
+    display: none;
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.hero p {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.about-me {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
 body.light-mode {
@@ -46,23 +109,28 @@ body.light-mode {
     --text-color: #000000;
 }
 
-.about-me {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
+@media (max-width: 600px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-top: 1px solid var(--accent-color);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+    }
 
-.about-me .display-name {
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-}
+    .nav-links.active {
+        transform: scaleY(1);
+    }
 
-.about-me .intro {
-    line-height: 1.6;
-}
-
-.about-me .quote {
-    font-style: italic;
-    color: var(--accent-color);
-    margin-top: 1rem;
+    #menu-toggle {
+        display: inline-block;
+    }
 }
