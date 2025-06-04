@@ -6,6 +6,7 @@
     <title>Developer Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -172,14 +173,43 @@
             <p>Blog section placeholder.</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <h2>Contact</h2>
-            <p>Contact section placeholder.</p>
+            <p>You can reach me at <a href="mailto:brayden.business@example.com">brayden.business@example.com</a>.</p>
+            <div class="contact-social">
+                <ul class="social-links">
+                    <li><a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="gaming-links">
+                <h3>Gaming</h3>
+                <ul class="social-links">
+                    <li><a href="https://twitch.tv" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Footer placeholder.</p>
+    <footer class="site-footer">
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button id="footer-theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+        <p class="footer-signature">Designed &amp; Developed by Brayden Diaz</p>
     </footer>
 
     <script src="script.js"></script>

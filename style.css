@@ -390,3 +390,79 @@ body.light-mode {
     font-weight: bold;
 }
 
+/* Contact Section */
+.contact-section {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.gaming-links {
+    margin-top: 1rem;
+}
+
+/* Footer */
+.site-footer {
+    background: #111;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.site-footer .footer-nav,
+.site-footer .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.site-footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: var(--accent-color);
+}
+
+#footer-theme-toggle {
+    background: none;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
+
+.footer-signature {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .site-footer .footer-nav,
+    .site-footer .footer-social {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
