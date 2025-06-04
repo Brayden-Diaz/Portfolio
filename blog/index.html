@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Blog</h1>
+    <a class="rss" href="#">RSS Feed (coming soon)</a>
+  </header>
+  <div class="tag-filter">
+    <button data-tag="All" class="active">All</button>
+    <button data-tag="Tech">#Tech</button>
+    <button data-tag="Growth">#Growth</button>
+    <button data-tag="Personal">#Personal</button>
+    <button data-tag="AI">#AI</button>
+  </div>
+  <div id="posts"></div>
+
+  <script src="blog.js"></script>
+</body>
+</html>
