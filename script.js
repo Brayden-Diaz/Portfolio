@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const skillItems = document.querySelectorAll('.skill-item');
     const graphPlaceholder = document.querySelector('.graph-placeholder');
+    const footerThemeToggle = document.getElementById('footer-theme-toggle');
 
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('light-mode');
@@ -12,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+    if (footerThemeToggle) {
+        footerThemeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    }
 
     // simple tooltip functionality
     skillItems.forEach(item => {
