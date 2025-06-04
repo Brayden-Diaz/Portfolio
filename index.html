@@ -75,9 +75,96 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects-section">
             <h2>Projects</h2>
-            <p>Projects section placeholder.</p>
+            <div class="projects-filters">
+                <div class="filter-group type-filters">
+                    <button class="active" data-type-filter="all">All</button>
+                    <button data-type-filter="personal">Personal</button>
+                    <button data-type-filter="professional">Professional</button>
+                    <button data-type-filter="ai">AI</button>
+                </div>
+                <div class="filter-group tech-filters">
+                    <button class="active" data-tech-filter="all">All</button>
+                    <button data-tech-filter="react">React</button>
+                    <button data-tech-filter="python">Python</button>
+                    <button data-tech-filter="javascript">JavaScript</button>
+                    <button data-tech-filter="java">Java</button>
+                    <button data-tech-filter="c++">C++</button>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="personal" data-tags="html css javascript">
+                    <div class="project-media">Media</div>
+                    <h3>Portfolio Website</h3>
+                    <p>A simple personal website showcasing my work.</p>
+                    <p class="tech">HTML, CSS, JavaScript</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="personal" data-tags="react javascript">
+                    <div class="project-media">Media</div>
+                    <h3>ToDo App</h3>
+                    <p>A task management app built with React.</p>
+                    <p class="tech">React</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="personal" data-tags="python ai">
+                    <div class="project-media">Media</div>
+                    <h3>AI Chatbot</h3>
+                    <p>An experimental chatbot using simple AI techniques.</p>
+                    <p class="tech">Python, AI</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="personal" data-tags="c++">
+                    <div class="project-media">Media</div>
+                    <h3>Game Engine</h3>
+                    <p>A lightweight 2D game engine written in C++.</p>
+                    <p class="tech">C++</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="personal" data-tags="javascript react">
+                    <div class="project-media">Media</div>
+                    <h3>Weather Dashboard</h3>
+                    <p>Weather app fetching data from an external API.</p>
+                    <p class="tech">React, JavaScript</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="professional" data-tags="react javascript node">
+                    <div class="project-media">Media</div>
+                    <h3>E-commerce Platform</h3>
+                    <p>Full stack platform for online sales.</p>
+                    <p class="tech">React, Node</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="professional" data-tags="python">
+                    <div class="project-media">Media</div>
+                    <h3>Data Pipeline</h3>
+                    <p>Automated data processing pipeline.</p>
+                    <p class="tech">Python</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="professional" data-tags="react javascript">
+                    <div class="project-media">Media</div>
+                    <h3>Internal Dashboard</h3>
+                    <p>Web dashboard for company metrics.</p>
+                    <p class="tech">React</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="professional" data-tags="python ai">
+                    <div class="project-media">Media</div>
+                    <h3>AI Analytics</h3>
+                    <p>Analytics platform with AI-driven insights.</p>
+                    <p class="tech">Python, AI</p>
+                    <a href="#">GitHub</a>
+                </div>
+                <div class="project-card" data-category="professional" data-tags="java">
+                    <div class="project-media">Media</div>
+                    <h3>Legacy Migration</h3>
+                    <p>Migrating enterprise systems to modern Java stack.</p>
+                    <p class="tech">Java</p>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
         </section>
 
         <section id="blog">
