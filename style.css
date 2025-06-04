@@ -494,3 +494,78 @@ body.light-mode {
     }
 }
 
+
+/* Blog */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.rss-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.post-preview {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.post-preview h2 {
+    margin-top: 0;
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+}
+
+.tag-list {
+    margin-top: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #333;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.25rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.blog-post {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.linkedin-share {
+    margin-top: 1rem;
+    background: none;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
+
+.linkedin-share:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}

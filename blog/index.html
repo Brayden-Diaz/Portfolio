@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Blog</h1>
-    <p>Blog posts will appear here.</p>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+            <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+        </nav>
+    </header>
+    <main class="blog-container">
+        <div class="blog-header">
+            <h1>Blog</h1>
+            <a href="#" class="rss-link">RSS Feed</a>
+        </div>
+        <div class="blog-tags filter-group">
+            <button class="active" data-tag-filter="all">All</button>
+            <button data-tag-filter="tech">Tech</button>
+            <button data-tag-filter="growth">Growth</button>
+            <button data-tag-filter="personal">Personal</button>
+            <button data-tag-filter="ai">AI</button>
+        </div>
+        <div class="posts-grid">
+            <article class="post-preview" data-tags="tech ai">
+                <h2><a href="posts/first-post.html">First Post</a></h2>
+                <div class="post-meta">Jan 1, 2024</div>
+                <p class="excerpt">An introduction to my new developer blog and my goals for exploring technology and AI.</p>
+                <div class="tag-list">
+                    <span class="tag">Tech</span>
+                    <span class="tag">AI</span>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-nav">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#skills">Skills</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#blog">Blog</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button id="footer-theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+        <p class="footer-signature">Designed &amp; Developed by Brayden Diaz</p>
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
