@@ -45,3 +45,24 @@ body.light-mode {
     --bg-color: #ffffff;
     --text-color: #000000;
 }
+
+.about-me {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me .display-name {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.about-me .intro {
+    line-height: 1.6;
+}
+
+.about-me .quote {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-top: 1rem;
+}
