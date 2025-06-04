@@ -4,13 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section class="about-me">
-        <h1 class="display-name">Brayden Diaz</h1>
-        <p class="intro">I'm Brayden, a curious young man committed to growth, learning, and creating. I balance a goofy spirit with professional focus and strive to care for and inspire those around me.</p>
-        <p class="quote">"Building a better world, one line of code at a time."</p>
-    </section>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+            <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+        </nav>
+    </header>
+    <main class="about-section">
+        <section class="about-me">
+            <h1 class="display-name">Brayden Diaz</h1>
+            <p class="intro">I'm Brayden, a curious young man committed to growth, learning, and creating. I balance a goofy spirit with professional focus and strive to care for and inspire those around me.</p>
+            <p class="quote">"Building a better world, one line of code at a time."</p>
+        </section>
+        <section class="hobbies">
+            <h2>Hobbies &amp; Interests</h2>
+            <ul class="hobby-list">
+                <li>Muay Thai</li>
+                <li>Jiu-Jitsu</li>
+                <li>Working Out</li>
+                <li>Gaming</li>
+            </ul>
+            <div class="gaming">
+                <h3>Favorite Games</h3>
+                <ul class="favorite-games">
+                    <li><i class="fas fa-gamepad"></i> League of Legends</li>
+                    <li><i class="fas fa-gamepad"></i> Valorant</li>
+                    <li><i class="fas fa-gamepad"></i> Dark Souls</li>
+                    <li><i class="fas fa-gamepad"></i> Super Smash Bros.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="experiences">
+            <h2>Unique Experiences</h2>
+            <ul class="experience-list">
+                <li>Saved a child while working as a lifeguard</li>
+                <li>Competed nationally in dance</li>
+            </ul>
+        </section>
+        <section class="journey">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2018</h3>
+                    <p>Began exploring the world of programming.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020</h3>
+                    <p>Started university and dove into computer science.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2022</h3>
+                    <p>Interned at a tech startup and built my first real app.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024</h3>
+                    <p>Looking forward to new challenges and opportunities.</p>
+                </div>
+            </div>
+            <a href="../assets/resume.pdf" class="resume-btn" download>Download Resume</a>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-card">
+                <p>"Brayden's dedication and passion for learning are unmatched."</p>
+                <p class="testimonial-author">- Mentor</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"A standout student with great problem-solving skills."</p>
+                <p class="testimonial-author">- Professor</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Delivered exactly what we needed ahead of schedule."</p>
+                <p class="testimonial-author">- Client</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
