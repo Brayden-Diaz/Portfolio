@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('light-mode');
+    });
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
 });

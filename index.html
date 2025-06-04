@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+            <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
         </nav>
     </header>
 
     <main>
+        <section id="home" class="hero">
+            <h1>Brayden Diaz</h1>
+            <p>Building a better world, one line of code at a time.</p>
+        </section>
         <section id="about" class="about-me">
             <h2 class="display-name">Brayden Diaz</h2>
             <p class="intro">I'm Brayden, a curious young man committed to growth, learning, and creating. While I keep things goofy, my professionalism and care for others shine through. I love inspiring people to build amazing things.</p>
