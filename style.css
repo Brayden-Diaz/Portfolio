@@ -569,3 +569,10 @@ body.light-mode {
     background: var(--accent-color);
     color: var(--bg-color);
 }
+
+.headshot {
+    border-radius: 50%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}

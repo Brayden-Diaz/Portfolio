@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <title>Brayden Diaz</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,28 +12,33 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#vision">Vision</a></li>
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
             <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <h1>Brayden Diaz</h1>
-            <p>Building a better world, one line of code at a time.</p>
+        <section id="about-me" class="about-me">
+            <div class="profile-image">
+                <img src="assets/images/headshot.jpg" alt="Brayden Diaz headshot" class="headshot">
+            </div>
+            <h1 class="display-name">Brayden Diaz</h1>
+            <p class="intro">I'm Brayden, a curious young man committed to growth, learning, and creating. I balance a goofy spirit with professional focus and strive to care for and inspire those around me.</p>
         </section>
-        <section id="about" class="about-me">
-            <h2 class="display-name">Brayden Diaz</h2>
-            <p class="intro">I'm Brayden, a curious young man committed to growth, learning, and creating. While I keep things goofy, my professionalism and care for others shine through. I love inspiring people to build amazing things.</p>
-            <p class="quote">"Building a better world, one line of code at a time."</p>
+        <section class="hobbies">
+            <h2>Hobbies &amp; Interests</h2>
+            <ul class="hobby-list">
+                <li><i class="fas fa-fist-raised"></i> Muay Thai</li>
+                <li><i class="fas fa-user-ninja"></i> Jiu-Jitsu</li>
+                <li><i class="fas fa-dumbbell"></i> Gym</li>
+                <li><i class="fas fa-gamepad"></i> Gaming</li>
+                <li><i class="fas fa-plane"></i> Traveling</li>
+            </ul>
         </section>
 
         <section id="skills" class="skills-section">
@@ -42,38 +47,36 @@
                 <div class="skill-group">
                     <h3>Frontend</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-tooltip="React">React</div>
-                        <div class="skill-item" data-tooltip="JavaScript">JavaScript</div>
-                        <div class="skill-item" data-tooltip="HTML">HTML</div>
-                        <div class="skill-item" data-tooltip="CSS">CSS</div>
+                        <div class="skill-item" data-tooltip="React"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-item" data-tooltip="JavaScript"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item" data-tooltip="HTML"><i class="fab fa-html5"></i> HTML</div>
+                        <div class="skill-item" data-tooltip="CSS"><i class="fab fa-css3-alt"></i> CSS</div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h3>Backend</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-tooltip="SQL">SQL</div>
-                        <div class="skill-item" data-tooltip="Python">Python</div>
-                        <div class="skill-item" data-tooltip="Java">Java</div>
-                        <div class="skill-item" data-tooltip="C++">C++</div>
+                        <div class="skill-item" data-tooltip="SQL"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item" data-tooltip="Python"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item" data-tooltip="Java"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item" data-tooltip="C++"><i class="fab fa-c"></i> C++</div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h3>Tools</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-tooltip="Microsoft Office Suite">Microsoft Office</div>
-                        <div class="skill-item" data-tooltip="Google Suite">Google Suite</div>
+                        <div class="skill-item" data-tooltip="Microsoft Office Suite"><i class="fab fa-microsoft"></i> Microsoft Office</div>
+                        <div class="skill-item" data-tooltip="Google Suite"><i class="fab fa-google"></i> Google Suite</div>
+                        <div class="skill-item" data-tooltip="Kali Linux"><i class="fab fa-linux"></i> Kali Linux</div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h3>Extra</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-tooltip="AI-assisted coding">AI-assisted coding</div>
+                        <div class="skill-item" data-tooltip="AI-assisted coding"><i class="fas fa-robot"></i> AI-assisted coding</div>
+                        <div class="skill-item" data-tooltip="Web App Penetration Testing"><i class="fas fa-shield-alt"></i> Web App Penetration Testing</div>
                     </div>
                 </div>
-            </div>
-
-            <div id="github-graph" class="github-graph">
-                <div class="graph-placeholder"></div>
             </div>
         </section>
 
@@ -85,6 +88,7 @@
                     <button data-type-filter="personal">Personal</button>
                     <button data-type-filter="professional">Professional</button>
                     <button data-type-filter="ai">AI</button>
+                    <button data-type-filter="security">Security</button>
                 </div>
                 <div class="filter-group tech-filters">
                     <button class="active" data-tech-filter="all">All</button>
@@ -96,135 +100,22 @@
                 </div>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="personal" data-tags="html css javascript">
-                    <div class="project-media">Media</div>
-                    <h3>Portfolio Website</h3>
-                    <p>A simple personal website showcasing my work.</p>
-                    <p class="tech">HTML, CSS, JavaScript</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="personal" data-tags="react javascript">
-                    <div class="project-media">Media</div>
-                    <h3>ToDo App</h3>
-                    <p>A task management app built with React.</p>
-                    <p class="tech">React</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="personal" data-tags="python ai">
-                    <div class="project-media">Media</div>
-                    <h3>AI Chatbot</h3>
-                    <p>An experimental chatbot using simple AI techniques.</p>
-                    <p class="tech">Python, AI</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="personal" data-tags="c++">
-                    <div class="project-media">Media</div>
-                    <h3>Game Engine</h3>
-                    <p>A lightweight 2D game engine written in C++.</p>
-                    <p class="tech">C++</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="personal" data-tags="javascript react">
-                    <div class="project-media">Media</div>
-                    <h3>Weather Dashboard</h3>
-                    <p>Weather app fetching data from an external API.</p>
-                    <p class="tech">React, JavaScript</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="professional" data-tags="react javascript node">
-                    <div class="project-media">Media</div>
-                    <h3>E-commerce Platform</h3>
-                    <p>Full stack platform for online sales.</p>
-                    <p class="tech">React, Node</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="professional" data-tags="python">
-                    <div class="project-media">Media</div>
-                    <h3>Data Pipeline</h3>
-                    <p>Automated data processing pipeline.</p>
-                    <p class="tech">Python</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="professional" data-tags="react javascript">
-                    <div class="project-media">Media</div>
-                    <h3>Internal Dashboard</h3>
-                    <p>Web dashboard for company metrics.</p>
-                    <p class="tech">React</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="professional" data-tags="python ai">
-                    <div class="project-media">Media</div>
-                    <h3>AI Analytics</h3>
-                    <p>Analytics platform with AI-driven insights.</p>
-                    <p class="tech">Python, AI</p>
-                    <a href="#">GitHub</a>
-                </div>
-                <div class="project-card" data-category="professional" data-tags="java">
-                    <div class="project-media">Media</div>
-                    <h3>Legacy Migration</h3>
-                    <p>Migrating enterprise systems to modern Java stack.</p>
-                    <p class="tech">Java</p>
-                    <a href="#">GitHub</a>
-                </div>
             </div>
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <article class="post-preview" data-tags="tech ai">
-                <h3><a href="blog/posts/first-post.html">First Post</a></h3>
-                <div class="post-meta">Jan 1, 2024</div>
-                <p class="excerpt">An introduction to my new developer blog and my goals for exploring technology and AI.</p>
-                <div class="tag-list">
-                    <span class="tag">Tech</span>
-                    <span class="tag">AI</span>
-                </div>
-            </article>
-            <a class="subscribe-btn" href="blog/index.html">See All Posts</a>
         </section>
 
         <section id="vision" class="vision-section">
             <h2>Mission &amp; Vision</h2>
-            <p><strong>Short term:</strong> showcase my work, tackle freelance projects, and build meaningful connections.</p>
-            <p><strong>Long term:</strong> grow into an entrepreneur and, one day, share knowledge as a professor.</p>
-            <h3>Timeline</h3>
-            <div class="timeline vision-timeline">
-                <div class="timeline-item">
-                    <h4>Q1&nbsp;2024</h4>
-                    <p>Initial portfolio launch.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Q2&nbsp;2024</h4>
-                    <p>Blog and networking features.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Q3&nbsp;2024</h4>
-                    <p>Showcase freelance projects.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Q4&nbsp;2024</h4>
-                    <p>Launch mentorship content.</p>
-                </div>
-            </div>
-            <a href="#blog" class="subscribe-btn">Follow for Updates</a>
+            <p>I want to grow as a developer, learn new skills, become an entrepreneur, and help others grow as a mentor and professor after I've achieved my goals.</p>
         </section>
 
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:brayden.business@example.com">brayden.business@example.com</a>.</p>
             <div class="contact-social">
                 <ul class="social-links">
-                    <li><a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:business@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/Brayden-Diaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-            <div class="gaming-links">
-                <h3>Gaming</h3>
-                <ul class="social-links">
-                    <li><a href="https://twitch.tv" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a></li>
-                    <li><a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
-                    <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </section>
@@ -232,19 +123,11 @@
 
     <footer class="site-footer">
         <div class="footer-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
+            <a href="#about-me">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="footer-social">
-            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-        <button id="footer-theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
         <p class="footer-signature">Designed &amp; Developed by Brayden Diaz</p>
     </footer>
 
